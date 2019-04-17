@@ -1,0 +1,13 @@
+{
+    "exec": "./start.sh",
+    "ignore": [
+      "purescript/output",
+      "sketch-plugin/src/scripts/output.js",
+      "*.sketchplugin"
+    ],
+    "watch": [
+      "purescript",
+      "sketch-plugin"
+    ],
+    "ext": "js, purs, json"
+}

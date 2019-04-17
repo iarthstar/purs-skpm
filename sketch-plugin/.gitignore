@@ -1,0 +1,14 @@
+# build artifacts
+plugin-name.sketchplugin
+
+# npm
+node_modules
+.npm
+npm-debug.log
+package-lock.json
+
+# mac
+.DS_Store
+
+# WebStorm
+.idea
