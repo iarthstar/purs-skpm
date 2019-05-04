@@ -1,7 +1,11 @@
 {
-  "name": "purs-sketch",
+  "name": "purescript",
   "version": "1.0.0",
-  "author": "Arth K. Gajjar",
+  "author": {
+    "name": "Arth K. Gajjar",
+    "email": "iarthstar@gmail.com",
+    "url": "https://github.com/iarthstar"
+  },
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf ./output && rm -rf .pulp-cache && rm -rf node_modules && rm -rf bower_components",

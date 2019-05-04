@@ -6,7 +6,15 @@
     "email": "iarthstar@gmail.com",
     "url": "https://github.com/iarthstar"
   },
-  "keywords": ["sketch", "plugin", "purescript", "template", "functional", "javascript", "nodejs"],
+  "keywords": [
+    "sketch",
+    "plugin",
+    "purescript",
+    "template",
+    "functional",
+    "javascript",
+    "nodejs"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/iarthstar/purs-sketch-plugin.git"
@@ -14,9 +22,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "setup": "sudo chmod +x start.sh && ./start.sh setup",
-    "build": "./start.sh build",
-    "watch": "nodemon watch",
-    "clean": "./start.sh clean"
+    "setup": "npm i; npm i -g skpm; cd purescript; npm i && bower i; cd ../sketch-plugin; npm i;",
+    "build": "cd purescript; npm run build; cd ../sketch-plugin; npm run build",
+    "watch": "concurrently \"cd purescript; npm run watch;\" \"cd sketch-plugin; npm start;\"",
+    "clean": "rm -rf ./plugin-name.sketchplugin ./node_modules; cd ./purescript; npm run clean; cd ../sketch-plugin; rm -rf ./node_modules;",
+    "start": "npm run setup && npm run build;"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0"
   }
 }

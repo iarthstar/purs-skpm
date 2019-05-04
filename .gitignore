@@ -1,1 +1,22 @@
-.psc-ide-port
+# build artifacts
+*.sketchplugin
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# lock 
+package-lock.json
+yarn.lock
+
+# mac
+.DS_Store
+
+# WebStorm
+.idea
+
+# purescript 
+/.psc-package/
+/.psc*
+/.psa*

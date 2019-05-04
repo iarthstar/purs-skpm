@@ -2,8 +2,8 @@ module Main where
 
 import Prelude (Unit)
 import Effect (Effect)
-import Lib.Sketch (showMessage)
+import Sketch.UI as UI
 
 myCommand :: Effect Unit
 myCommand = do
-  showMessage "It's alive 🙌"  
+  UI.message "It's alive 🙌"  
