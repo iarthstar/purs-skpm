@@ -1,14 +1,14 @@
 {
   "name": "plugin-name",
-  "description": "",
-  "version": "0.1.0",
+  "description": "Plugin Description",
+  "version": "1.0.0",
   "engines": {
     "sketch": ">=49.0"
   },
   "skpm": {
-    "name": "plugin-name",
+    "name": "Plugin Name",
     "manifest": "src/manifest.json",
-    "main": "../plugin-name.sketchplugin",
+    "main": "../Plugin-Name.sketchplugin",
     "assets": [
       "assets/**/*"
     ]
@@ -18,9 +18,9 @@
     "watch": "skpm-build --watch",
     "run": "skpm-build --run",
     "start": "skpm-build --watch --run",
-    "postinstall": "npm run build && skpm-link"
+    "postinstall": "yarn build && skpm-link"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.5.11"
+    "@skpm/builder": "latest"
   }
 }

@@ -9,7 +9,7 @@
   "dependencies": {
     "purescript-prelude": "^4.1.0",
     "purescript-effect": "^2.0.1",
-    "purescript-sketch": "^1.0.0"
+    "purescript-sketch": "latest"
   },
   "devDependencies": {
     "purescript-psci-support": "^4.0.0"
