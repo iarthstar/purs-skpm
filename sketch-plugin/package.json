@@ -1,26 +1,27 @@
 {
-  "name": "plugin-name",
-  "description": "Plugin Description",
-  "version": "1.0.0",
-  "engines": {
-    "sketch": ">=49.0"
-  },
-  "skpm": {
-    "name": "Plugin Name",
-    "manifest": "src/manifest.json",
-    "main": "../Plugin-Name.sketchplugin",
-    "assets": [
-      "assets/**/*"
-    ]
-  },
-  "scripts": {
-    "build": "skpm-build",
-    "watch": "skpm-build --watch",
-    "run": "skpm-build --run",
-    "start": "skpm-build --watch --run",
-    "postinstall": "yarn build && skpm-link"
-  },
-  "devDependencies": {
-    "@skpm/builder": "latest"
-  }
+    "name": "plugin-name",
+    "description": "Plugin Description",
+    "version": "1.0.0",
+    "engines": {
+        "sketch": ">=49.0"
+    },
+    "skpm": {
+        "name": "Plugin Name",
+        "manifest": "src/manifest.json",
+        "main": "../Plugin-Name.sketchplugin",
+        "assets": [
+            "assets/**/*"
+        ]
+    },
+    "scripts": {
+        "build": "skpm-build",
+        "watch": "skpm-build --watch",
+        "run": "skpm-build --run",
+        "start": "skpm-build --watch --run",
+        "postinstall": "yarn build && skpm-link"
+    },
+    "devDependencies": {
+        "regenerator-runtime": "latest",
+        "@skpm/builder": "latest"
+    }
 }
