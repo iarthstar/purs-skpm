@@ -1,4 +1,4 @@
-![Purs Sketch Plugin](https://i.imgur.com/7fiVreJ.png)
+![Purs Skpm](https://i.imgur.com/7fiVreJ.png)
 
 # Write Sketch Plugins in Purescript
 
@@ -6,7 +6,8 @@ A Project Template for writing Sketch Plugins in Purescript.
 
 ## Example Plugins
 
-* [Copy Paste Shadows](https://github.com/iarthstar/copy-paste-shadows)
+* [Shadows-Utilities](https://github.com/iarthstar/Shadows-Utilities)
+* [Image2Palette](https://github.com/iarthstar/Image2Palette)
 
 ## Development Guide
 
