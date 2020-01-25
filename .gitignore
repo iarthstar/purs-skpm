@@ -1,10 +1,13 @@
 # build artifacts
-*.sketchplugin
+/*.sketchplugin/
 
 # npm
-node_modules
-.npm
+/node_modules/
+/.npm/
 npm-debug.log
+
+# bower
+/bower_components/
 
 # lock 
 package-lock.json
@@ -17,6 +20,8 @@ yarn.lock
 .idea
 
 # purescript 
+/output/
+/.pulp-cache/
 /.psc-package/
 /.psc*
 /.psa*
